@@ -39,7 +39,7 @@ class Student
 
     @id = DB[:conn].execute("SELECT MIN(students.id) FROM students")[0][0]
 
-    binding.pry
+    # binding.pry
   end
 
 end
