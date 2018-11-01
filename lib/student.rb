@@ -37,7 +37,7 @@ class Student
 
     DB[:conn].execute(sql, self.name, self.grade)
 
-    @id = DB[:conn].execute("SELECT MIN(student.id) FROM students")
+    @id = DB[:conn].execute("SELECT MIN(students.id) FROM students")
   end
 
 end
